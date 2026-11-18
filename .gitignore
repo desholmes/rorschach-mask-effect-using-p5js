@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+dist-editor/
+
+# Third-party images: not licensed for redistribution (see README)
+textures/
+public/textures/

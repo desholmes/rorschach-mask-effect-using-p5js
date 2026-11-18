@@ -1,0 +1,33 @@
+{
+	"name": "rorschach",
+	"version": "0.1.0",
+	"private": true,
+	"description": "A creative coding project to replicate the rorschach effect, inspired by the Watchmen film.",
+	"type": "module",
+	"engines": {
+		"node": "24.22.1"
+	},
+	"scripts": {
+		"start": "vite",
+		"build": "tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"audit": "npm audit --omit=dev --audit-level=high",
+		"ci": "sfw npm ci",
+		"add:dep": "sfw npm install --save-exact",
+		"add:dev-dep": "sfw npm install --save-dev --save-exact",
+		"remove": "sfw npm uninstall",
+		"build:editor": "tsc --noEmit && vite build --config vite.editor.config.ts"
+	},
+	"dependencies": {
+		"p5": "2.4.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.8",
+		"typescript": "7.0.2",
+		"vite": "8.3.8"
+	},
+	"license": "MIT"
+}
